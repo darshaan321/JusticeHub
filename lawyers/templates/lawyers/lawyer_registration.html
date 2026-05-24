@@ -1,0 +1,75 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Lawyer Registration</title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+<link rel="stylesheet" href="{% static 'css/lawyer_register.css' %}">
+</head>
+
+<body>
+
+<!-- FORM START -->
+<form method="POST" enctype="multipart/form-data">
+{% csrf_token %}
+
+<section class="registerform">
+<div class="container">
+<div class="row">
+
+<div class="col-md-6">
+<h1>Hello Lawyer <i class="fas fa-user-tie text-gold"></i></h1>
+<h2>Please register here <i class="fas fa-hand-point text-gold"></i></h2>
+</div>
+
+<div class="col-md-6">
+
+<!-- Basic Info -->
+<input type="text" name="first_Name" class="form-control mb-2" placeholder="First Name" required>
+<input type="text" name="last_Name" class="form-control mb-2" placeholder="Last Name" required>
+<input type="email" name="email" class="form-control mb-2" placeholder="Email" required>
+<input type="password" name="password" class="form-control mb-2" placeholder="Password" required>
+
+<!-- Extra Info -->
+<input type="text" name="contact_number" class="form-control mb-2" placeholder="Contact Number" required>
+
+<input type="file" name="fileToUpload" class="form-control mb-2" required>
+
+<input type="text" name="degree" class="form-control mb-2" placeholder="Degree" required>
+<input type="text" name="full_address" class="form-control mb-2" placeholder="Address" required>
+<input type="text" name="city" class="form-control mb-2" placeholder="City" required>
+<input type="text" name="practise_Length" class="form-control mb-2" placeholder="Experience" required>
+
+<!-- Case Handle -->
+<label>Case Handle</label><br>
+<input type="checkbox" name="case_handle" value="Criminal"> Criminal
+<input type="checkbox" name="case_handle" value="Civil"> Civil
+<input type="checkbox" name="case_handle" value="Family"> Family
+
+<!-- Speciality -->
+<select name="speciality" class="form-control mt-2" required>
+<option value="">Select Speciality</option>
+<option value="Criminal law">Criminal law</option>
+<option value="Civil law">Civil law</option>
+</select>
+
+<input type="text" name="bar_id" class="form-control mt-2" placeholder="Bar ID" required>
+
+<br>
+<button type="submit" class="btn btn-primary btn-block">Register</button>
+
+</div>
+</div>
+</div>
+</section>
+
+</form>
+<!-- FORM END -->
+
+</body>
+</html>

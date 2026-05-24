@@ -1,0 +1,131 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Justify Hub - Login</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg neo-navbar fixed-top">
+<div class="container">
+
+<a class="navbar-brand" href="{% url 'index' %}">
+<img src="{% static 'img/No Need.jpeg' %}" alt="Logo" height="40">
+</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="{% url 'index' %}">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="{% url 'lawyers' %}">Lawyers</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="{% url 'service' %}">Services</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="{% url 'about' %}">About</a>
+</li>
+
+<li class="nav-item ms-3">
+<a href="#" class="btn gradient-btn">Login</a>
+</li>
+
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- Login Section -->
+<section class="registerform d-flex align-items-center" style="min-height:100vh;">
+
+<div class="container">
+<div class="row justify-content-center">
+
+<div class="col-md-5">
+
+<div class="login-card">
+
+<h3 class="text-center mb-4">Login</h3>
+
+<form method="POST" action="{% url 'login' %}">
+{% csrf_token %}
+
+<div class="mb-3">
+<label>Email</label>
+<input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+</div>
+
+<div class="mb-3">
+<label>Password</label>
+<input type="password" name="password" class="form-control" placeholder="Enter your password" required>
+</div>
+
+<button type="submit" class="btn btn-gold w-100">Login</button>
+
+</form>
+
+</div>
+
+</div>
+</div>
+
+<!-- Registration Options -->
+<div class="row justify-content-center mt-5">
+<div class="col-md-8 text-center">
+
+<h4 class="mb-4">New here?</h4>
+
+<div class="row">
+
+<div class="col-md-6 mb-3">
+<div class="option-card p-4" onclick="location.href='{% url 'lawyer_registration' %}'">
+<h5>Register as Lawyer</h5>
+<button class="btn btn-outline-primary mt-2">Register</button>
+</div>
+</div>
+
+<div class="col-md-6 mb-3">
+<div class="option-card p-4" onclick="location.href='{% url 'user_registration' %}'">
+<h5>Register as User</h5>
+<button class="btn btn-outline-primary mt-2">Register</button>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center mt-4">
+<p>© 2026 JUSTICE HUB</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

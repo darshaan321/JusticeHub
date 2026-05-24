@@ -1,0 +1,109 @@
+:root {
+            --primary-color: #00274D;
+            --accent-color: #FFD700;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f8f9fa;
+        }
+
+     .navbar-brand img {
+      height: 50px;
+      width: 180px;
+      transition: all 0.3s ease;
+    }
+        
+
+        .neo-navbar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-link {
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        .nav-link.active {
+            color: var(--accent-color) !important;
+            font-weight: 600;
+        }
+
+        .nav-link:hover {
+            color: rgb(122, 144, 232);
+        }
+
+        .containera {
+            margin-top: 120px;
+        }
+
+        .section {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #00274D;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #FFD700;
+            padding-bottom: 0.5rem;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            padding: 1.5rem;
+            border-left: 4px solid #FFD700;
+            background-color: #F8F9FA;
+        }
+
+        .cta-section {
+            text-align: center;
+            padding: 3rem;
+            background-color: #00274D;
+            color: white;
+            margin-top: 2rem;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            margin: 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+
+        .button-primary {
+            background-color: #FFD700;
+            color: #00274D;
+        }
+
+        .button-secondary {
+            background-color: #00274D;
+            color: #FFD700;
+            border: 2px solid #FFD700;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+        }
+
+        footer {
+            background-color: #00274D;
+            color: #FFD700;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+        }

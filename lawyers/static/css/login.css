@@ -1,0 +1,138 @@
+/* Import Professional Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Background Gradient (Smooth Blend Fix) */
+body {
+    background: linear-gradient(135deg, #0a1f44 0%, #1e3c72 50%, #facc15 100%);
+    min-height: 100vh; /* Fix height issue */
+    font-family: 'Inter', sans-serif; /* Professional font */
+    color: #fff;
+}
+
+/* Navbar Enhancement */
+.neo-navbar {
+    background: rgba(10, 31, 68, 0.85);
+    backdrop-filter: blur(12px);
+}
+.navbar-brand img {
+      height: 50px;
+      width: 180px;
+      transition: all 0.3s ease;
+    }
+.navbar .nav-link {
+    color: #fff !important;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+    color: #facc15 !important;
+}
+
+/* Gradient Button */
+.gradient-btn {
+    background: linear-gradient(45deg, #facc15, #fbbf24);
+    color: #000;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.gradient-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #facc15;
+}
+
+/* Login Section */
+.registerform {
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+/* Glassmorphism Card */
+.login-card {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(18px);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+    transition: 0.3s;
+}
+
+.login-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Form Labels (Email & Password Bold) */
+label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+}
+
+/* Inputs */
+.form-control {
+    background: rgba(255,255,255,0.18);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 12px;
+    margin-bottom: 18px; /* FIX: Proper spacing between fields */
+}
+
+.form-control::placeholder {
+    color: #ddd;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 10px #facc15;
+    border: none;
+}
+
+/* Button */
+.btn-gold {
+    background: linear-gradient(45deg, #facc15, #fbbf24);
+    border: none;
+    color: #000;
+    font-weight: 600;
+    border-radius: 25px;
+    padding: 12px;
+    margin-top: 10px; /* FIX: Space between password and button */
+    width: 100%;
+    transition: 0.3s;
+}
+
+.btn-gold:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #facc15;
+}
+
+/* Registration Cards */
+.option-card {
+    background: rgba(255,255,255,0.12);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    backdrop-filter: blur(12px);
+    padding: 20px;
+}
+
+.option-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* Icons Color */
+.option-card i {
+    color: #facc15 !important;
+}
+
+/* Footer */
+footer {
+    background: rgba(4, 28, 70, 0.85);
+    padding: 15px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 14px;
+}

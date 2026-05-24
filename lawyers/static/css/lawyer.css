@@ -1,0 +1,104 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f5f7fb;
+}
+
+.neo-navbar{
+  background: rgba(255, 255, 255, 0.95) !important;
+      backdrop-filter: blur(15px);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      padding: 1rem 0;
+      transition: all 0.3s ease;
+}
+.navbar-brand img {
+      height: 50px;
+      width: 180px;
+      transition: all 0.3s ease;
+    }
+.navbar-brand {
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+/* Title */
+.section-title {
+    font-weight: 700;
+    font-size: 32px;
+    color: #0a1f44;
+}
+
+/* Search Box */
+.search-box input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+.search-btn {
+    background: linear-gradient(45deg, #4facfe, #00f2fe);
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.search-btn:hover {
+    opacity: 0.9;
+}
+
+/* Cards */
+.lawyer-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.lawyer-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* Badge */
+.specialty-badge {
+    display: inline-block;
+    background: #eef4ff;
+    color: #1e3c72;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+/* Experience */
+.experience-chip {
+    background: #e0f7ec;
+    color: #0c7a43;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+/* Button */
+.gradient-btn {
+    background: linear-gradient(45deg, #4facfe, #00f2fe);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.gradient-btn:hover {
+    transform: scale(1.03);
+    opacity: 0.9;
+}

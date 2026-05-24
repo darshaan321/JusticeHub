@@ -1,0 +1,57 @@
+body{
+font-family:'Poppins',sans-serif;
+background:#F9FAFB;
+color:#1F2A44;
+}
+
+.neo-navbar{
+background:white;
+padding:1rem 0;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.navbar-brand img {
+      height: 50px;
+      width: 180px;
+      
+    }
+
+.gradient-btn{
+background:linear-gradient(135deg,#FFD700,#FFC107);
+border:none;
+color:#00274D;
+padding:0.8rem 2rem;
+border-radius:50px;
+font-weight:600;
+}
+
+.service-card{
+background:white;
+border-radius:20px;
+padding:2rem;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+transition:0.3s;
+height:100%;
+}
+
+.service-card:hover{
+transform:translateY(-8px);
+}
+
+.service-icon{
+font-size:2.5rem;
+color:#00274D;
+margin-bottom:1rem;
+}
+
+main.container{
+padding-top:6rem;
+padding-bottom:4rem;
+}
+
+.neo-footer{
+background:#00274D;
+color:white;
+padding:2rem 0;
+border-top:4px solid #FFD700;
+}
